@@ -34,7 +34,7 @@ namespace Web
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/About/Error");
             }
 
             app.UseStaticFiles();
@@ -43,7 +43,7 @@ namespace Web
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=About}/{action=Index}/{id?}");
             });
         }
     }

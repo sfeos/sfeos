@@ -4,7 +4,7 @@ body {
 }
 
 .jumbotron {
-  background-image:url("../../assets/img/Galaxy-1.jpg");
+  background-image:url("../images/Galaxy-1.jpg");
   background-size:cover;
 }
 

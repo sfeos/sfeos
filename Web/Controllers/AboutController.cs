@@ -8,28 +8,39 @@ using Web.Models;
 
 namespace Web.Controllers
 {
-    public class HomeController : Controller
+    public class AboutController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
+		public IActionResult GamePlay()
+		{
+			return View();
+		}
 
-            return View();
-        }
+		public IActionResult Economy()
+		{
+			return View();
+		}
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
+		public IActionResult Lore()
+		{
+			return View();
+		}
 
-            return View();
-        }
+		public IActionResult CrowdFounding()
+		{
+			return View();
+		}
 
-        public IActionResult Error()
+		public IActionResult MissionPlan()
+		{
+			return View();
+		}
+
+		public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
