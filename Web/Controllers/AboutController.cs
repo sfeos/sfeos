@@ -15,7 +15,7 @@ namespace Web.Controllers
             return View();
         }
 
-		public IActionResult GamePlay()
+		public IActionResult Gameplay()
 		{
 			return View();
 		}

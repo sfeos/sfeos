@@ -1,6 +1,6 @@
 body {
   background-color:black;
-  color:white;
+  color: whitesmoke;
 }
 
 .jumbotron {
@@ -8,16 +8,28 @@ body {
   background-size:cover;
 }
 
-.jumbotron.h2, .jumbotron h2 {
-  color:white;
-}
-
-.card {
+.interface .card {
   background-color:#000033;
   border-color:blue;
   height:100%;
-  margin-bottom:20px;
 }
+
+.card-disclaimer {
+	background-color: lightcyan;
+	border-color: blue;
+	height: 100%;
+	color: black;
+	font-size: 70%;
+	margin-bottom: 20px;
+}
+
+	.card-disclaimer p {
+		margin-bottom: 2px;
+	}
+
+	.card-disclaimer .card-body {
+		padding: 0.75rem;
+	}
 
 .navbar .active {
   border-bottom:dashed;

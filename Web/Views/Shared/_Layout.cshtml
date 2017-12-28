@@ -15,13 +15,13 @@
 	<div>
 		<nav class="navbar navbar-light navbar-expand-md navigation-clean">
 			<div class="container">
-				<a href="index.html" class="navbar-brand">The SFEOS Game</a>
+				<a href="@Url.Action("Index", "About")" class="navbar-brand">The SFEOS Game</a>
 				<button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse"
 					 id="navcol-1">
 					<ul class="nav navbar-nav ml-auto">
 						<li role="presentation" class="nav-item">
-							<a href="@Url.Action("GamePlay", "About")" class="nav-link">Gameplay </a>
+							<a href="@Url.Action("Gameplay", "About")" class="nav-link">Gameplay </a>
 						</li>
 						<li role="presentation" class="nav-item">
 							<a href="@Url.Action("Economy", "About")" class="nav-link">Economy </a>
@@ -35,7 +35,7 @@
 						<li role="presentation" class="nav-item">
 							<a href="@Url.Action("MissionPlan", "About")" class="nav-link">Mission Plan</a>
 						</li>
-						<li class="dropdown">
+						@*<li class="dropdown">
 							<a data-toggle="dropdown" aria-expanded="false" href="#" class="dropdown-toggle nav-link dropdown-toggle">Your Account</a>
 							<div role="menu" class="dropdown-menu">
 								<a role="presentation" href="#" class="dropdown-item">
@@ -48,7 +48,7 @@
 									Open Orders
 								</a>
 							</div>
-						</li>
+						</li>*@
 					</ul>
 				</div>
 			</div>
