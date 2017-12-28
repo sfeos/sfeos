@@ -1,0 +1,25 @@
+body {
+  background-color:black;
+  color:white;
+}
+
+.jumbotron {
+  background-image:url("../../assets/img/Galaxy-1.jpg");
+  background-size:cover;
+}
+
+.jumbotron.h2, .jumbotron h2 {
+  color:white;
+}
+
+.card {
+  background-color:#000033;
+  border-color:blue;
+  height:100%;
+  margin-bottom:20px;
+}
+
+.navbar .active {
+  border-bottom:dashed;
+}
+
