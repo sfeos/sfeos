@@ -16,7 +16,8 @@ body {
 
 .card-disclaimer {
 	background-color: lightcyan;
-	border-color: blue;
+	border-color: white;
+	border-width: thick;
 	height: 100%;
 	color: black;
 	font-size: 70%;
