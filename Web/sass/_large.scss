@@ -1,0 +1,31 @@
+div#wrapper {
+
+    
+    
+    
+}
+
+
+main {
+	padding: 0 15em;
+}
+
+
+
+/*  ------------- NAV -------------  */
+nav {
+	height: auto;
+	padding-left: $gutter;
+	ul {
+
+        
+        
+	}
+	ul li {
+		width:auto;
+		border-bottom: none;
+		border-left: 1px solid $primaryColor;
+	}
+	ul li:last-child {border-right: 1px solid $primaryColor;}
+	
+} // end nav

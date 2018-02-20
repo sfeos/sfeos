@@ -1,0 +1,22 @@
+div#wrapper {
+	display: grid;
+}
+
+
+main {
+	padding: 0 6em;
+}
+
+
+/*  ------------- HAMBURGER -------------  */
+.hamburger {
+
+}
+
+/*  ------------- NAV -------------  */
+nav {
+	height: auto;
+	ul li {border-bottom: 1px solid $primaryColor; }
+	ul li a {border-radius: 0; background-color: transparent; margin: 0;}
+	
+} // end nav
