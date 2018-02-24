@@ -9,18 +9,21 @@ Vue.component('ai-002-captain-name', {
         '       </div>' +
         '       <button v-on:click="saveName">Save Name</button>' +
         '   </div>'+
-        '   <p class="fade-in-10" v-if="aiText01Complete">{{descText01}}</p>' +
+        '   <p class="ai-typing" v-if="nameSaved">{{typedText02}}</p>' +
         '</div>',
 
     data: function() {
         return {
             captainName: '',
+            nameSaved: false,
             typingIndex: 0,
             typingSpeed: 50, // speed in milliseconds
             typedText01: '',
             aiText01: '> What should I call you, Captain?',
             aiText01Complete: false,
-            descText01: ''
+            descText01: '',
+            typedText02: '',
+            aiText02Complete: false
         };
     },
 
@@ -35,11 +38,26 @@ Vue.component('ai-002-captain-name', {
             } else {
                 this.aiText01Complete = true;
             }
-        }, 
+        },
 
         saveName: function(){
+            this.descText01 = 'Very well, Captain ' + this.captainName + '. I have started the '+
+            'process of connecting us to the ships AIs. We will have full control shortly.'
+            this.typingIndex = 0;
+            this.nameSaved = true;
+            this.typeAiText02();
+        },
 
-        }
+        typeAiText02: function(event){
+            // fix this with a while loop so we can pass in text and make global
+            if (this.typingIndex < this.descText01.length) {
+                this.typedText02 += this.descText01.charAt(this.typingIndex);
+                this.typingIndex++;
+                setTimeout(this.typeAiText02, this.typingSpeed);
+            } else {
+                this.aiText02Complete = true;
+            }
+        },
     },
 
     created: function(){
