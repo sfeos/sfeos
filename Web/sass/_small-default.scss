@@ -126,7 +126,44 @@ main {
 		color: $primaryColor;
 	} // end h1
 
+	.ai-typing {
+		color: $aiTyping;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+		-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+		-moz-animation: neon1 1.5s ease-in-out infinite alternate;
+		animation: neon1 1.5s ease-in-out infinite alternate;
+	}
+
 } // end main
+
+@keyframes neon1 {
+	from {
+	  text-shadow: 0 0 10px $aiTypingGlow, 0 0 20px $aiTypingGlow, 0 0 30px $aiTypingGlow, 0 0 40px $aiTyping, 0 0 70px $aiTyping, 0 0 80px $aiTyping, 0 0 100px $aiTyping, 0 0 150px $aiTyping;
+	}
+	to {
+	  text-shadow: 0 0 5px $aiTypingGlow, 0 0 10px $aiTypingGlow, 0 0 15px $aiTypingGlow, 0 0 20px $aiTyping, 0 0 35px $aiTyping, 0 0 40px $aiTyping, 0 0 50px $aiTyping, 0 0 75px $aiTyping;
+	}
+}
+
+@-webkit-keyframes neon1 {
+	from {
+	  text-shadow: 0 0 10px $aiTypingGlow, 0 0 20px $aiTypingGlow, 0 0 30px $aiTypingGlow, 0 0 40px $aiTyping, 0 0 70px $aiTyping, 0 0 80px $aiTyping, 0 0 100px $aiTyping, 0 0 150px $aiTyping;
+	}
+	to {
+	  text-shadow: 0 0 5px $aiTypingGlow, 0 0 10px $aiTypingGlow, 0 0 15px $aiTypingGlow, 0 0 20px $aiTyping, 0 0 35px $aiTyping, 0 0 40px $aiTyping, 0 0 50px $aiTyping, 0 0 75px $aiTyping;
+	}
+}
+
+@-moz-keyframes neon1 {
+	from {
+	  text-shadow: 0 0 10px $aiTypingGlow, 0 0 20px $aiTypingGlow, 0 0 30px $aiTypingGlow, 0 0 40px $aiTyping, 0 0 70px $aiTyping, 0 0 80px $aiTyping, 0 0 100px $aiTyping, 0 0 150px $aiTyping;
+	}
+	to {
+	  text-shadow: 0 0 5px $aiTypingGlow, 0 0 10px $aiTypingGlow, 0 0 15px $aiTypingGlow, 0 0 20px $aiTyping, 0 0 35px $aiTyping, 0 0 40px $aiTyping, 0 0 50px $aiTyping, 0 0 75px $aiTyping;
+	}
+}
 
 
 

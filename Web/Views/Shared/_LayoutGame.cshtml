@@ -6,8 +6,6 @@
     <title>SFEOS - Game PoC</title>
 
 	<link rel="stylesheet" href="~/css/game.css" />
-
-	<script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/5115516cde12daaa8b6e876ae/62e887b3719b4638cfcecfe92.js");</script>
 </head>
 <body>
     <div id="game-intro">
@@ -17,6 +15,10 @@
     <script src="~/lib/vue.js"></script>
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/js/game/components/darkness-to-light.js"></script>
+    <script src="~/js/game/components/ai-001.js"></script>
+    <script src="~/js/game/components/ai-002-captain-name.js"></script>
     <script src="~/js/game/game-intro.js"></script>
     @RenderSection("Scripts", required: false)
 

@@ -124,7 +124,7 @@ div.social {
     padding-left: .5rem;
     color: white; }
   div.social a:hover {
-    color: #832f24; }
+    color: #df3620; }
 
 /*  ------------- HEADER -------------  */
 header {
@@ -139,7 +139,7 @@ header {
 
 /*  ------------- NAV -------------  */
 nav {
-  background-color: #832f24;
+  background-color: #df3620;
   height: 100vh; }
   nav ul li a {
     display: block;
@@ -162,14 +162,37 @@ main {
     padding-top: 1rem;
     line-height: 150%; }
   main p a {
-    color: #832f24; }
+    color: #df3620; }
   main div {
     padding-top: 1rem; }
   main h1 {
     font-size: 2rem;
     margin: 1.5rem 2% 0.5rem 2%;
     color: #607625; }
+  main .ai-typing {
+    color: #0dd5e4;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate; }
 
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #8eaabb, 0 0 20px #8eaabb, 0 0 30px #8eaabb, 0 0 40px #0dd5e4, 0 0 70px #0dd5e4, 0 0 80px #0dd5e4, 0 0 100px #0dd5e4, 0 0 150px #0dd5e4; }
+  to {
+    text-shadow: 0 0 5px #8eaabb, 0 0 10px #8eaabb, 0 0 15px #8eaabb, 0 0 20px #0dd5e4, 0 0 35px #0dd5e4, 0 0 40px #0dd5e4, 0 0 50px #0dd5e4, 0 0 75px #0dd5e4; } }
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #8eaabb, 0 0 20px #8eaabb, 0 0 30px #8eaabb, 0 0 40px #0dd5e4, 0 0 70px #0dd5e4, 0 0 80px #0dd5e4, 0 0 100px #0dd5e4, 0 0 150px #0dd5e4; }
+  to {
+    text-shadow: 0 0 5px #8eaabb, 0 0 10px #8eaabb, 0 0 15px #8eaabb, 0 0 20px #0dd5e4, 0 0 35px #0dd5e4, 0 0 40px #0dd5e4, 0 0 50px #0dd5e4, 0 0 75px #0dd5e4; } }
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #8eaabb, 0 0 20px #8eaabb, 0 0 30px #8eaabb, 0 0 40px #0dd5e4, 0 0 70px #0dd5e4, 0 0 80px #0dd5e4, 0 0 100px #0dd5e4, 0 0 150px #0dd5e4; }
+  to {
+    text-shadow: 0 0 5px #8eaabb, 0 0 10px #8eaabb, 0 0 15px #8eaabb, 0 0 20px #0dd5e4, 0 0 35px #0dd5e4, 0 0 40px #0dd5e4, 0 0 50px #0dd5e4, 0 0 75px #0dd5e4; } }
 /*  ------------- FOOTER -------------  */
 footer p {
   text-align: center;
@@ -177,7 +200,7 @@ footer p {
   padding: .75rem 0;
   font-size: .9rem; }
 footer p a {
-  color: #832f24; }
+  color: #df3620; }
 
 .fade-in-5 {
   -webkit-animation: fadein 5s;
