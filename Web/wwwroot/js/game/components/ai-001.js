@@ -12,7 +12,7 @@ Vue.component('ai-001', {
         return {
             message: 'message inside ai-001',
             typingIndex: 0,
-            typingSpeed: 50, // speed in milliseconds
+            typingSpeed: 20, // speed in milliseconds
             typedText01: '',
             aiText01: '> Welcome to the world Captain.',
             aiText01Complete: false,
