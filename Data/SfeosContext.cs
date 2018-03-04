@@ -9,8 +9,7 @@ namespace Sfeos.Data
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer(
-				LocalConfig.ConnectionString);
+			optionsBuilder.UseSqlServer(LocalConfig.ConnectionString);
 		}
 	}
 }
