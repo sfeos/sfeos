@@ -9,8 +9,10 @@ namespace Sfeos.Data
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
+			// git update-index --assume-unchanged [fileName]
+			// git update-index --no-assume-unchanged [fileName]
 			optionsBuilder.UseSqlServer(
-				"some connection string");
+				"ReplaceWithConnectionString");
 		}
 	}
 }
